@@ -1,0 +1,7 @@
+// -t means tag name which we gave as spingboot-docker-demo
+// "spingboot-docker-demo" is docker image name.
+$ docker build -t spingboot-docker-demo .
+
+// -p means port number which we are giving 9090 for docker container and 8080 is our local springboot project port
+//  "spingboot-docker-demo" docker image name which we gave above
+$ docker run -p 9090:8080 spingboot-docker-demo
